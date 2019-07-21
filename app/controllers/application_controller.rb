@@ -45,5 +45,5 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
 # D => Delete process
-
+  
 end
