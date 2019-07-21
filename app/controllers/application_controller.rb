@@ -44,4 +44,6 @@ class ApplicationController < Sinatra::Base
     binding.pry
     erb :show
   end
+# D => Delete process
+
 end
