@@ -50,6 +50,6 @@ class ApplicationController < Sinatra::Base
     @post = Post.find_by_id(params[:id])
     @post.delete # active records delete action
     binding.pry
-    erb :delete
+    erb :deleted
   end
 end
