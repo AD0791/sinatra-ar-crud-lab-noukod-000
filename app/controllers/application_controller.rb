@@ -50,7 +50,7 @@ class ApplicationController < Sinatra::Base
     @post = Post.find_by_id(params[:id])
     #binding.pry
     @post.delete # active records delete action
-    binding.pry # the data is avalauble on the post
+    #binding.pry # the data is avalauble on the post
     # the delete action is done already
     erb :deleted
   end
