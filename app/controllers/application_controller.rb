@@ -41,9 +41,12 @@ class ApplicationController < Sinatra::Base
     @post.name = params["name"]
     @post.content = params["content"]
     @post.save # real update is going there
-    binding.pry
+    #binding.pry
     erb :show
   end
 # D => Delete process
-  
+  delete '/posts/:id/delete' do
+
+    erb :delete
+  end
 end
