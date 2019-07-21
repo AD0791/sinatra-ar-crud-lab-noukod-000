@@ -46,7 +46,7 @@ class ApplicationController < Sinatra::Base
   end
 # D => Delete process
   delete '/posts/:id/delete' do
-    binding.pry
+    #binding.pry
     @post = Post.find_by_id(params[:id])
     @post.delete # active records delete action
     binding.pry
